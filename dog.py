@@ -3,5 +3,10 @@ class Dog:
         self.name = name
         self.breed = breed
         print("dog initialized!")
-my_dog = Dog("Rex", "SuperDoggo")
-print(my_dog.breed)
+    def bark(self):
+        print('Woof!')
+    def sit(self):
+        print('Sit, good doggo')
+    def rollOver(self):
+        print('Roll over, good doggo')
+
