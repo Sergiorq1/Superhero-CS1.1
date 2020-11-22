@@ -1,14 +1,13 @@
+"""
+Ignore this code, this is hero.py prior to adding armor, abilities, and different mechanics
+"""
 import random
-from ability import Ability
-from armor import Armor
 class Hero:
     def __init__(self, name, starting_health=100, attack=50):
         self.name = name
         self.starting_health = starting_health
         self.current_health = starting_health
         self.attack = attack
-        self.abilities = list()
-        self.armor = list()
     def fight(self, opponent):
         print("The battle with your opponent has started! \nGuess the right number, you hit. Guess wrong, you get hit ")
         pick_either = [1,2]
@@ -28,11 +27,6 @@ class Hero:
 
 hero1 = Hero("Stonks Man", 200)
 hero2 = Hero("Pikachu", 200)
-# hero1.fight(hero2)
-
-if __name__ == "__main__":
-    # If you run this file from the terminal
-    # this block is executed.
-    my_hero = Hero("Grace Hopper", 200)
-    print(my_hero.name)
-    print(my_hero.current_health)
+# print(my_hero.name)
+# print(my_hero.current_health)
+hero1.fight(hero2)
